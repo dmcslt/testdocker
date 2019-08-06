@@ -1,6 +1,6 @@
 FROM ubuntu 
 #ADD ali.list /etc/apt/sources.list.d/ali.list
-ADD sources.list /etc/apt/sources.list
+#ADD sources.list /etc/apt/sources.list
 RUN apt-get update -y && \
 	apt-get install -y openssh-server && \
 	mkdir -p /var/run/sshd && \
